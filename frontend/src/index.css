@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Utilities */
+.scroll-container {
+  position: relative;
+}
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(55, 65, 81, 0.9);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+.scroll-button.left {
+  left: 10px;
+}
+.scroll-button.right {
+  right: 10px;
+}
+.scroll-button:hover {
+  background-color: rgba(37, 99, 235, 0.9);
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.custom-scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+.custom-scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ---------------------------------------------------- */
+/* ✅ Corrected Stream Chat Dark Theme Overrides */
+/* ---------------------------------------------------- */
+
+:root {
+  --str-chat__primary-color: #3b82f6;
+  --str-chat__input-bg: #202138;
+  --str-chat__primary-text: #e2e8f0;
+  --str-chat__secondary-text: #a0aec0;
+  --str-chat__background: #1a1b2b;
+  --str-chat__border-color: #28293e;
+}
+
+.str-chat__container {
+  background-color: var(--str-chat__background) !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  color: var(--str-chat__primary-text);
+  height: 100% !important;
+  width: 100% !important;
+}
+
+
+.str-chat__list {
+  background-color: #1a1b2b !important;
+}
+
+.str-chat__message--me .str-chat__message-simple__body {
+  background-color: #3b82f6 !important;
+  color: #fff !important;
+  border-radius: 18px 18px 0 18px !important;
+  font-weight: 500;
+}
+
+.str-chat__message-simple__body--other {
+  background-color: #202138 !important;
+  color: #e2e8f0 !important;
+  border-radius: 18px 18px 18px 0 !important;
+  font-weight: 500;
+}
+
+.str-chat__input-flat-wrapper {
+  background-color: #202138 !important;
+  color: #e2e8f0 !important;
+  border-top: 1px solid #28293e !important;
+}
+
+.str-chat__input-flat {
+  background-color: #1a1b2b !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #28293e !important;
+  border-radius: 25px !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.str-chat__input-flat::placeholder {
+  color: #a0aec0 !important;
+}
+
+.str-chat__input-flat-send-button {
+  background-color: #3b82f6 !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.str-chat__input-flat-send-button svg {
+  fill: #fff !important;
+}
+
+.str-chat__thread {
+  background-color: #1a1b2b !important;
+  border-left: 1px solid #28293e !important;
+}
+.str-chat__message-attachment {
+  border-radius: 12px !important;
+}
+
+/* Force header dark */
+.str-chat__channel-header,
+.str-chat__header,
+.str-chat__header-simple {
+  background-color: #202138 !important;
+  border-bottom: 1px solid #28293e !important;
+  color: #e2e8f0 !important;
+}
+
+.str-chat__channel-header .str-chat__avatar,
+.str-chat__channel-header-title,
+.str-chat__channel-header-subtitle {
+  color: #e2e8f0 !important;
+}
+
+/* Force footer dark */
+.str-chat__input,
+.str-chat__input-flat-wrapper,
+.str-chat__message-input {
+  background-color: #202138 !important;
+  color: #e2e8f0 !important;
+  border-top: 1px solid #28293e !important;
+}
+
+.str-chat__message-input .str-chat__input-flat {
+  background-color: #1a1b2b !important;
+  border: 1px solid #28293e !important;
+  border-radius: 25px !important;
+  padding: 0.75rem 1rem !important;
+  color: #e2e8f0 !important;
+}
+
+.str-chat__message-input .str-chat__input-flat::placeholder {
+  color: #a0aec0 !important;
+}
+
+/* Send button */
+.str-chat__input-flat-send-button {
+  background-color: #3b82f6 !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.str-chat__input-flat-send-button svg {
+  fill: #fff !important;
+}
+.str-chat__channel-header,
+.str-chat__header,
+.str-chat__header-simple {
+  background-color: #202138 !important;
+  border-bottom: none !important;  /* remove line */
+  box-shadow: none !important;    
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: none;
+}
+
+
+.str-chat__message-input .str-chat__message-textarea-container .str-chat__message-textarea{
+  color: #e2e8f0 !important;
+}
+
+.str-chat__empty-channel{
+  background: none;
+}
+
+.str-video__generic-menu{
+    color: white;
+}
+
+.str-video__participant-view .str-video__participant-details .str-video__participant-details__name {
+    color: white;
+}
+
+.str-video__video-placeholder{
+  background-color: #2a3846 !important;
+}
+
+.str-video__notification{
+  border-radius: 50% !important;
+  color: #fff !important;
+}
+
+.str-video__participant-list .str-video__participant-list-header .str-video__participant-list-header__title{
+  color: #fff !important;
+  padding-left: 1rem;
+}
+
+.str-video__participant-list .str-video__search-input__container{
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.str-video__search-input__container{
+  border: 1px solid #28293e !important;
+  border-radius: 25px !important;
+  color: #e2e8f0 !important;
+}
+
+.str-video__participant-list{
+  padding-left: 2rem;
+}
+
+.str-video__participant-list .str-video__participant-list-header {
+  padding-right: 1rem;
+}
+
+.str-video__participant-list .str-video__participant-list__content-header{
+  display: none;
+}
+
+.str-video__participant-listing-item{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+  gap: 1rem;
+}
+
+.str-video__participant-list{
+  padding-bottom: 1rem;
+}
+
+/* Custom CSS additions for Responsiveness */
+
+/* ---------------------------------------------------- */
+/* Responsive Adjustments for Stream Video */
+/* ---------------------------------------------------- */
+
+/* 1. Ensure the Controls are Centered and Sized Correctly on all screens */
+/* The main CallControls wrapper */
+.str-video__call-controls {
+  /* Overrides to ensure controls bar takes full width of the container
+     and buttons are evenly spaced. Tailwind is typically used on the wrapper, 
+     but this ensures the internal structure is flexible. */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Adjust gap between button groups */
+}
+
+/* 2. Style Adjustments for Participants List (when shown on desktop) */
+.str-video__call-participants-list {
+  /* Ensure the list wrapper respects the container size set by Tailwind's lg:block */
+  background-color: var(--str-chat__background) !important; 
+  /* Important: Resetting stream's default absolute/fixed positioning if any */
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 0 12px 12px 0; /* Match parent's rounded-xl, adjusting for position */
+  
+  /* On large screens, Stream often treats this as a sidebar.
+     Since you are controlling visibility via Tailwind, we just ensure 
+     its internal scroll area uses full height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3. Adjust CallParticipantsList for Mobile (when it is NOT hidden) */
+@media (max-width: 1023px) {
+  /* If you ever decide to show the CallParticipantsList as a modal or drawer
+     on mobile, this is where you would define its full-screen or drawer styles.
+     
+     Since your DevFinderVideo.jsx currently uses 'hidden' on mobile,
+     this block mainly serves as a placeholder or can be used for minor adjustments
+     to the controls if needed. */
+     
+    .str-video__call-controls {
+        /* Reduce padding or gap slightly on small screens if necessary */
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+}
+
+
+/* 4. Speaker Layout Overflow Fix */
+/* This is crucial to ensure the video grid scales correctly and hides overflow, 
+   especially in conjunction with the fixed-height approach on desktop */
+.str-video__speaker-layout {
+  /* Ensures the video grid fills the container and clips videos */
+  overflow: hidden; 
+  /* Use flex-grow in the parent div in JSX for vertical sizing */
+}
