@@ -43,6 +43,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.1",
     "sonner": "^2.0.7",
+    "startup-project": "file:..",
     "stream-chat": "^9.19.1",
     "stream-chat-react": "^13.6.6",
     "tailwind-merge": "^3.3.1",
