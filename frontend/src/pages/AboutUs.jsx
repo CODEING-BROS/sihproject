@@ -16,7 +16,7 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import MeetTheCreator from "@/components/frontendComponents/MeetTheCreator";
+import MeetTheCreator from "@/components/frontendComponents/MeetTheDev";
 //import AuthNavbar from "@/components/frontendComponents/AuthNavbar"; // Assuming this is your Navbar component
 
 const AboutUs = () => {
